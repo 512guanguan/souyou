@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" >
+
+	<ImageView
+		android:id="@+id/icon"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:src="@drawable/appicon1" />
+
+	<RelativeLayout
+		android:id="@+id/linear"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@+id/bt_down"
+		android:layout_toRightOf="@+id/icon" >
+
+		<TextView
+			android:id="@+id/tv_appname"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/tv_progress"
+			android:text="找对象"
+			android:textSize="18sp" />
+
+		<TextView
+			android:id="@+id/tv_progress"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:text="23%"
+			android:textSize="16sp" />
+	</RelativeLayout>
+
+	<ProgressBar
+		android:id="@+id/probar"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="match_parent"
+		android:layout_height="18dp"
+		android:layout_below="@+id/linear"
+		android:layout_toLeftOf="@+id/bt_down"
+		android:layout_toRightOf="@+id/icon"
+		android:max="100"
+		android:progress="1" />
+
+	<Button
+		android:id="@+id/bt_down"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:text="下载" />
+
+</RelativeLayout>

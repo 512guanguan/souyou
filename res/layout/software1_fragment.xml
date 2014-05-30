@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/lavender" >
+
+	<com.llb.souyou.util.MyImageSwitcher
+		android:id="@+id/imageswitcher"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_alignParentTop="true" />
+
+	<ListView
+		android:id="@+id/lv_software1"
+		android:layout_width="fill_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/bt_loadmore"
+		android:layout_below="@+id/imageswitcher"
+		android:layout_marginLeft="1sp"
+		android:layout_marginRight="1sp"
+		android:divider="@color/lavender"
+		android:dividerHeight="2sp"
+		android:fadingEdge="none"
+		android:fastScrollEnabled="true" />
+
+	<Button
+		android:id="@+id/bt_loadmore"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:text="点击加载更多"
+		android:visibility="gone" >
+	</Button>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linear0"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/white"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:id="@+id/linearLayout1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="2dip"
+		android:paddingTop="2dip" >
+
+		<TextView
+			android:id="@+id/tv_tab1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1.0"
+			android:gravity="center"
+			android:text="榜单"
+			android:textColor="@color/blue"
+			android:textSize="15sp" />
+
+		<TextView
+			android:id="@+id/tv_tab2"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1.0"
+			android:gravity="center"
+			android:text="分类"
+			android:textColor="@color/chocolate"
+			android:textSize="15sp" />
+
+		<TextView
+			android:id="@+id/tv_tab3"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1.0"
+			android:gravity="center"
+			android:text="新锐"
+			android:textColor="@color/chocolate"
+			android:textSize="15sp" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:orientation="vertical"
+		android:paddingBottom="3dip" >
+
+		<ImageView
+			android:id="@+id/iv_title_line"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="30dp"
+			android:scaleType="matrix"
+			android:src="@drawable/line" />
+	</LinearLayout>
+
+</LinearLayout>
